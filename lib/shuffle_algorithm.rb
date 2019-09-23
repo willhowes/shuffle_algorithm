@@ -1,5 +1,5 @@
 class Array
   def shuffle_algorithm
-    [0]
+    self
   end
 end
