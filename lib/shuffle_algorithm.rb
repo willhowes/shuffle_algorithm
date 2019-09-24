@@ -15,4 +15,4 @@ class Array
 end
 
 # array_shuffle = Proc.new { |array| array.shuffle_algorithm }
-# CodeTimer.printed_results(code_timer_for_arrays(array_shuffle))
+# CodeTimer.save_to_spreadsheet(code_timer_for_arrays(array_shuffle), 'ruby_shuffle_results')
