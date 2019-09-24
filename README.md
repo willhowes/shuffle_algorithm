@@ -20,7 +20,7 @@ ruby lib/shuffle_algorithm.rb
 
 ## How to run the tests
 Run the following in your command line from the project's directory:
-```rspec``
+```rspec```
 
 Please note that, due to the random nature of the algorithm, the spec_helper file has the line ```srand 123``` which will fix the random element, but this will be different each time the project is opened and so the expected test results may need adjusting accordingly each time.
 
