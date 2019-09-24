@@ -1,14 +1,18 @@
+# require_relative '../../code_timer/lib/code_timer.rb'
+# include CodeTimer
+
 class Array
 
   def shuffle_algorithm
-    array_to_handle = self
-    shuffled_array = []
-    until array_to_handle.empty?
-      element_index = rand(self.length)
-      shuffled_array << array_to_handle[element_index]
-      array_to_handle.delete_at(element_index)
+    i = self.length - 1
+    until i == 0
+      random_index = rand(i)
+      self[random_index], self[i] = self[i], self[random_index]
+      i -= 1
     end
-    return shuffled_array
+    self
   end
-  
 end
+
+# array_shuffle = Proc.new { |array| array.shuffle_algorithm }
+# CodeTimer.printed_results(code_timer_for_arrays(array_shuffle))
